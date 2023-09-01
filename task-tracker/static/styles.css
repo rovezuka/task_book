@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Стиль для кнопки добавления */
+.add-button {
+    background-color: #4CAF50; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Отступы */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Стиль курсора при наведении */
+}
+
+/* Стиль для кнопки удаления */
+.delete-button {
+    background-color: #f44336; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 5px 10px; /* Отступы */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Стиль курсора при наведении */
+}
+

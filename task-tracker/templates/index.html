@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Задачник</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Задачник</h1>
+    <ul>
+    {{ range $index, $task := .tasks }}
+        <li>
+            {{ $task }}
+            <form method="POST" action="/delete/{{ $index }}">
+                <input type="submit" class="delete-button" value="Удалить">
+            </form>
+        </li>
+    {{ end }}
+    </ul>
+
+    <form method="POST" action="/add">
+        <input type="text" name="newTask" placeholder="Добавить новую задачу">
+        <input type="submit" class="add-button" value="Добавить">
+    </form>
+</body>
+</html>
