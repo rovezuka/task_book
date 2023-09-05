@@ -7,14 +7,14 @@
 <body>
     <h1>Задачник</h1>
     <ul>
-    {{ range $index, $task := .tasks }}
+        {{ range $index, $task := .tasks }}
         <li>
-            {{ $task }}
-            <form method="POST" action="/delete/{{ $index }}">
+            {{ $task.Description }}
+            <form method="POST" action="/delete/{{ .ID }}">
                 <input type="submit" class="delete-button" value="Удалить">
             </form>
         </li>
-    {{ end }}
+    {{ end }}    
     </ul>
 
     <form method="POST" action="/add">
