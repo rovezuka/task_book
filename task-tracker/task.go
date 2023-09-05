@@ -1,5 +1,7 @@
 package main
 
 type Task struct {
-	Title string
+	ID          int    // Уникальный идентификатор задачи
+	Description string // Описание задачи
+	Done        bool   // Флаг завершенности задачи
 }
