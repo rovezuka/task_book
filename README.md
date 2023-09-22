@@ -28,6 +28,8 @@ git clone https://github.com/rovezuka/task-book
 ```
 go get -u github.com/gin-gonic/gin
 go get -u github.com/mattn/go-sqlite3
+go get -u gorm.io/driver/sqlite
+go get -u gorm.io/gorm
 ```
 
 4. Создайте базу данных SQLite:
